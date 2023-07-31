@@ -1,0 +1,26 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  jackson:
+    default-property-inclusion: non_null
+
+clients:
+  team:
+    name: ${CLIENTS_TEAM_NAME}
+    url: ${CLIENTS_TEAM_URL}
+  user:
+    name: ${CLIENTS_USER_NAME}
+    url: ${CLIENTS_USER_URL}

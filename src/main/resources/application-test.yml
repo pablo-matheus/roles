@@ -1,0 +1,9 @@
+DATABASE_URL: jdbc:h2:mem:testdb
+DATABASE_USERNAME: sa
+DATABASE_PASSWORD: password
+
+CLIENTS_TEAM_NAME: team
+CLIENTS_TEAM_URL: https://cgjresszgg.execute-api.eu-west-1.amazonaws.com
+
+CLIENTS_USER_NAME: user
+CLIENTS_USER_URL: https://cgjresszgg.execute-api.eu-west-1.amazonaws.com

@@ -1,0 +1,8 @@
+INSERT INTO ROLES (id, name, creation_date)
+VALUES ('e762634c-3e41-11eb-b897-0862660ccbd4', 'DEVELOPER', '2022-12-31');
+
+INSERT INTO ROLES (id, name, creation_date)
+VALUES ('e7626367-3e41-11eb-b897-0862660ccbd4', 'PRODUCT_OWNER', '2022-12-31');
+
+INSERT INTO ROLES (id, name, creation_date)
+VALUES ('e7626368-3e41-11eb-b897-0862660ccbd4', 'TESTER', '2022-12-31');
