@@ -12,6 +12,8 @@ public interface RoleService {
 
     boolean exists(RoleDto roleDto);
 
+    RoleDto save(RoleDto roleDto);
+
     RoleDto createRole(RoleDto roleDto);
 
     RoleDto findRoleByTeamIdAndUserId(String teamId, String userId);

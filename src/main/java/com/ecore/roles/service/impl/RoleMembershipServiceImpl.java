@@ -37,9 +37,9 @@ public class RoleMembershipServiceImpl implements RoleMembershipService {
     @Autowired
     private final RoleMembershipMapper roleMembershipMapper;
 
-
     @Transactional
-    private RoleMembershipDto save(RoleMembershipDto roleMembershipDto) {
+    @Override
+    public RoleMembershipDto save(RoleMembershipDto roleMembershipDto) {
         RoleDto roleDto = roleService.findByName(roleMembershipDto.getRoleDto().getName());
 
         if (!roleService.exists(roleDto)) {

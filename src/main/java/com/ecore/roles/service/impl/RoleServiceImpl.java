@@ -48,7 +48,8 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Transactional
-    private RoleDto save(RoleDto roleDto) {
+    @Override
+    public RoleDto save(RoleDto roleDto) {
         Role role = roleMapper.toEntity(roleDto);
 
         if (roleRepository.existsByName(role.getName())) {

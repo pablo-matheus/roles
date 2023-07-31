@@ -1,5 +1,6 @@
 package com.ecore.roles.response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,9 +15,14 @@ import java.time.LocalDateTime;
 public class RoleMembershipResponse {
 
     private String id;
+
+    @JsonProperty("role")
     private RoleResponse roleResponse;
+
     private String teamId;
+
     private String userId;
+
     private LocalDateTime creationDate;
 
 }
