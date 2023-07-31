@@ -49,7 +49,7 @@ public class RoleMembershipServiceImpl implements RoleMembershipService {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Role does not exist");
         }
 
-        roleMembershipDto.getRoleDto().setId(roleDto.getId());
+        roleMembershipDto.setRoleDto(roleDto);
 
         TeamDto teamDto = teamService.findById(roleMembershipDto.getTeamId());
 
