@@ -68,7 +68,7 @@ class RoleControllerTest {
     }
 
     @Test
-    void givenValidRequestWhenCreateRoleThenReturn200Ok() throws Exception {
+    void givenValidRequestWhenCreateRoleThenReturn201Created() throws Exception {
         RoleRequest roleRequest = new RoleRequest();
         roleRequest.setName("123");
 
@@ -160,7 +160,7 @@ class RoleControllerTest {
     }
 
     @Test
-    void givenValidRequestWhenAssignRoleThenReturn200Ok() throws Exception {
+    void givenValidRequestWhenAssignRoleThenReturn201Created() throws Exception {
         String roleId = "123";
         String teamId = "123";
         String userId = "123";
